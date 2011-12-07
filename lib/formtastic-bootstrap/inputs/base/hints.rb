@@ -7,7 +7,7 @@ module FormtasticBootstrap
 
         def hint_html(inline_or_block = :block)
           if hint?
-            hint_class = if inline_or_block == :block
+            hint_class = if inline_or_block == :inline
               options[:hint_class] || builder.default_inline_hint_class
             else
               options[:hint_class] || builder.default_block_hint_class
